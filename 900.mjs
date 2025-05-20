@@ -17,19 +17,19 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
 // by janisslsm (John) from ps4-dev discord
 
-import { log } from '../utils.mjs';
-import { mem } from '../mem.mjs';
-import { KB} from '../constants.mjs';
-import { ChainBase } from '../chain.mjs';
+import { log } from './utils.mjs';
+import { mem } from './mem.mjs';
+import { KB} from './constants.mjs';
+import { ChainBase } from './chain.mjs';
 
 import {
     find_base,
     get_view_vector,
     resolve_import,
     init_syscall_array,
-} from '../memtools.mjs';
+} from './memtools.mjs';
 
-import * as rw from '../rw.mjs';
+import * as rw from './rw.mjs';
 
 const origin = window.origin;
 const port = '8000';
