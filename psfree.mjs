@@ -35,7 +35,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
 import { Int } from './int64.mjs';
 import { Memory } from './mem.mjs';
-import { KB, MB } from './module/offset.mjs';
+import { KB, MB } from './offset.mjs';
 import { BufferView } from './rw.mjs';
 
 import {
