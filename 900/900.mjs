@@ -17,9 +17,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
 // by janisslsm (John) from ps4-dev discord
 
-import { log } from './module/utils.mjs';
-import { mem } from './module/mem.mjs';
-import { KB} from './module/constants.mjs';
+import { log } from './utils.mjs';
+import { mem } from './mem.mjs';
+import { KB} from './constants.mjs';
 import { ChainBase } from './chain.mjs';
 
 import {
@@ -27,9 +27,9 @@ import {
     get_view_vector,
     resolve_import,
     init_syscall_array,
-} from './module/memtools.mjs';
+} from './memtools.mjs';
 
-import * as rw from './module/rw.mjs';
+import * as rw from './rw.mjs';
 
 const origin = window.origin;
 const port = '8000';
