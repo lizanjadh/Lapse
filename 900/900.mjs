@@ -20,7 +20,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 import { log } from './module/utils.mjs';
 import { mem } from './module/mem.mjs';
 import { KB} from './module/constants.mjs';
-import { ChainBase } from './module/chain.mjs';
+import { ChainBase } from './chain.mjs';
 
 import {
     find_base,
