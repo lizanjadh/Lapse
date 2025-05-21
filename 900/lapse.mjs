@@ -29,7 +29,7 @@ import { mem } from './module/mem.mjs';
 import { log, die, hex, hexdump } from './module/utils.mjs';
 import { cstr, jstr } from './module/memtools.mjs';
 import { page_size, context_size } from './module/offset.mjs';
-import { Chain } from './module/chain.mjs';
+import { Chain } from './chain.mjs';
 
 import {
     View1, View2, View4,
@@ -37,7 +37,7 @@ import {
     Buffer,
 } from './module/view.mjs';
 
-import * as rop from './module/chain.mjs';
+import * as rop from './chain.mjs';
 import * as config from './config.mjs';
 
 const t1 = performance.now();
