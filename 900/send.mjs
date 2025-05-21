@@ -57,20 +57,20 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
 import * as config from './config.mjs';
 
-import { Int } from './module/int64.mjs';
-import { Addr, mem } from './module/mem.mjs';
-import { make_buffer, find_base, resolve_import } from './module/memtools.mjs';
-import { KB, MB } from './module/offset.mjs';
+import { Int } from './int64.mjs';
+import { Addr, mem } from './mem.mjs';
+import { make_buffer, find_base, resolve_import } from './memtools.mjs';
+import { KB, MB } from './offset.mjs';
 
 import {
     log,
     align,
     die,
     send,
-} from './module/utils.mjs';
+} from './utils.mjs';
 
-import * as rw from './module/rw.mjs';
-import * as o from './module/offset.mjs';
+import * as rw from './rw.mjs';
+import * as o from './offset.mjs';
 
 const origin = window.origin;
 const port = '8000';
