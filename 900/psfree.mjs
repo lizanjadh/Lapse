@@ -34,7 +34,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 //     needed offsets on different firmwares (PS5).
 
 import { Int } from './int64.mjs';
-import { Memory } from './mem.mjs';
+import { Memory,mem } from './mem.mjs';
 import { KB, MB } from './offset.mjs';
 import { BufferView } from './rw.mjs';
 
