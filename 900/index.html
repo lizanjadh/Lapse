@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="cache.manifest" lang="en">
 <head>
 <title>*PSFree Webkit+Lapse Kernel Exploit PS4 9.00 Firmware*</title>
 <meta charset="UTF-8">
@@ -23,9 +23,6 @@ System Ready
 <button id="jailbreak" class="ps-btn" title="PlayStation">
 <img src="./logo.png" width="100" height="50"></button>
 
-<script>
-if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
-</script>
 <script src='./index.js'></script>
 <script src='./payload.js'></script>
 </head>
@@ -127,4 +124,10 @@ h1 {
     font-size: 0.9rem;
 }
 </style>
+
+<script>
+        function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));document.title="Installing offline cache: " + Percent + "%";}
+        function DisplayCacheProgress(){setTimeout(function(){;document.title="Cache Success !";},1000);setTimeout(function(){window.location.href = document.referrer;},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+    </script>
+
 </html>
