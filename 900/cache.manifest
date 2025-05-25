@@ -9,8 +9,10 @@ chain.mjs
 config.mjs
 constants.mjs
 index.html
+index.js
 int64.mjs
 lapse.mjs
+logo.svg
 logo.png
 mem.mjs
 memtools.mjs
